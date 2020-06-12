@@ -1,0 +1,50 @@
+.love{
+	margin-top:0px;
+}
+.header{
+	background-color:#00bcd4;
+	font-family:'courier new';
+}
+.header:hover{
+	background-color:#ffbcbc;
+	color:#0779e4;
+}
+button{
+	background-color:#127681;
+}
+button:hover{
+	background-color:#F9C49A;
+}
+*{
+	margin:0;
+	padding:0;
+}
+#mid{
+	text-align: center;
+	margin-top: 122px;
+}
+h2{
+
+	background-color: #e0dede;
+	text-align: center;	
+	color:red;
+}
+
+.row{
+	background-color: #127681;
+}
+img{
+	width:"100";
+	height:auto;
+	margin: 0;
+}
+input[type='text'],button{
+	background-color:#efa8e4;
+	border-radius:25%;
+}
+input:hover{
+	background-color:#f2ed6f;
+}
+body{
+	background-color: red;
+}

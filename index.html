@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Love Calculator.</title>
+</head>
+<body>
+<div class="header">
+			<h1>Do you wanna watch your love match? then you have come to the right place.!</h1>
+			<h2><center>Love Calculator results:<br> Let's see, how many times you get "Wow"!</center></h2>
+			<center><p id="demo"></p></center>
+</div>		
+<div class="row">
+	<div class="col-sm-4 col-md-4"><img src="images/girl.jpg" alt="Didn't find ur pics." ></div>
+		
+	<div class="col-sm-4 col-md-4" id="mid"><label>Enter your name:</label>
+		<input type="text" name="name" placeholder="Enter your name!" id="first"><br><center>❤</center>
+		<label>Enter their name:</label>
+		<input type="text"  id="second" name="name" placeholder="Enter your name!">
+		<br><br>
+		<center><button onclick=" javascript:calculator()">Click me!</button></center>
+	</div>
+	<div class="col-sm-4 col-md-4"><img src="images/lad.jpg"></div>
+</div>
+</body>
+<script language="javascript">
+	function calculator()
+{
+	var filed1=document.getElementById("first").value;
+	var filed2=document.getElementById("second").value;
+	console.log("filed1"+filed1);
+	console.log("filed2"+filed2);
+
+	if(!filed1 || !filed2)
+	{
+		document.getElementById("demo").innerHTML="Sorry, You have not written your name!";
+	}
+	else{ 
+		var loveScore=(Math.random(filed1)+Math.random(filed2))*100;
+		loveScore=Math.floor(loveScore);
+		if(loveScore>=100){
+	document.getElementById("demo").innerHTML="Wow "+filed1 +" ❤ "+filed2+ " "+loveScore + " %";
+}
+else{
+	var loveScore=(Math.random(filed1)+Math.random(filed2))*100;
+		loveScore=Math.floor(loveScore);
+	document.getElementById("demo").innerHTML=filed1 +" ❤ "+filed2+ " "+loveScore + " %";	
+}
+}
+}
+</script>
+</html>
